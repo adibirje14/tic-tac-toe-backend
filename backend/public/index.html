@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Tic Tac Toe</h1>
+    
+    <!-- Login/Register Form -->
+    <div id="auth">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <button id="show-register">Register</button>
+    </div>
+    
+    <!-- Game Area -->
+    <div id="game" style="display: none;">
+      <h2>Welcome, <span id="user"></span></h2>
+      <div id="board"></div>
+      <p id="game-status"></p>
+      <button id="logout">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
